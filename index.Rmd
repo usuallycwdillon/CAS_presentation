@@ -236,9 +236,9 @@ Much of this interest is motivated by work experience with the government, whitn
 
 * All agents are constrained by the _planes of social activity_
   - It would be really cool to link to real data
-    - Harvard-MIT Dataverse (sociographic)
-    - GDELT (source of reasoning data)
-    - War and governance data (COW, HRW, ...)
+      - Harvard-MIT Dataverse (sociographic)
+      - GDELT (source of reasoning data)
+      - War and governance data (COW, HRW, ...)
     
 * Bootstraping problem (creating the world we currently live in)
 
