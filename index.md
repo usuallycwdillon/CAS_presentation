@@ -9,7 +9,7 @@ revealjs    :
   transition: cube    # {none, page, concave, zoom, linear, fade, default}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : zenburn      #  {tomorrow, zenburn, ... }
-widgets     : []            # {mathjax, quiz, bootstrap}
+widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 
 --- .class1
@@ -91,9 +91,13 @@ What are the midterm and final "exams" to check for success?
  - also serve as a meta-model for smaller-scale and discipline-specific research (extensible)
  - to serve as a laboratory in which to compare other models
 
+</br> 
+
 ### Purposes
 
 * I expect this tool will be useful for policy-makers and planners to define common context for plans that span bureaucratic boundaries
+
+* To create a laboratory for future studies
 
 ***
 
@@ -123,7 +127,7 @@ What are the midterm and final "exams" to check for success?
  - End of the Cold War
  - Whatever comes next (post-nationalism, transnationalism, ...)
  
-* ...and, do we see some of this already with asymetric challenges to nations and their roles?
+* ... and, do we see some of this already with asymetric challenges to nations and their roles?
  - al Qaida and Islamic jihad, anti-corporate movement (Occupy, etc)
  - Brad/Chelsea Manning, Ed Snowden, Wiki Leaks, ...
  - BitCoin, private militaries
@@ -218,9 +222,11 @@ Much of this interest is motivated by work experience with the government, whitn
   - until replaced by usurping agent or board (votes)
   
 * Developed agents use _practical reason_ to interact
-  - $if I want x, then I need y$
-  - $I can get y$
-  - $I will try to get x$
+
+>_if I want x, then I need y;_  
+>_I can get y:_  
+>_I will try to get x_  
+
   
 * Least developed agents exist to generate _structural emergence_   
   
