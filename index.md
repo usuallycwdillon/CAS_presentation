@@ -5,147 +5,263 @@ author      : C.W. Dillon
 job         : CAS in Public Policy
 framework   : revealjs     # {io2012, html5slides, shower, dzslides, ...}
 revealjs    :
-  theme: night    # {sky, beige, simple, serif, night, default, solarized, moon}
+  theme: moon    # {sky, beige, simple, serif, night, default, solarized, moon}
   transition: cube    # {none, page, concave, zoom, linear, fade, default}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      #  {tomorrow, zenburn, ... }
+hitheme     : zenburn      #  {tomorrow, zenburn, ... }
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 
----
+--- .class1
 
 ### Modeling a Dynamic Global Context 
+   
+</br>   
+   
+* * * * 
 
-#### (A global-scale, extensible, docking model of the world as a complex adaptive system for postulating world futures)
+A global-scale, extensible, docking  model      
+of   
+the world political system   
+&mdash;as a complex adaptive system&mdash;  
+to   
+postulate, contextualize and compare   
+alternative world futures
 
+* * * * 
+  
+</br>
+</br>
+   
+<small> 
+[CW Dillon](http://www.css.gmu.edu/?q=node/15) 
 
+for _CAS in Public Policy_, CSS739
 
-
-<small> CW Dillon
-for CAS in Public Policy, CSS739
 George Mason University
 </small>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 *** =pnotes
 
-I am a PhD student in the Department of Computational Social Sciences, at the Krasnow Institute for Advanced Studies. We focus primarily on neurosciences and applications of complexity theory. This seminar, by Dr. Qin Tian has focused on the question of how seeing policy issues as being framed by the world (human-environment interactions) as a complex adaptive system. ...which is part of what makes good public policy so very difficult to acheive.
+I am a PhD student in the Department of Computational Social Sciences, at the Krasnow Institute for Advanced Studies. We focus primarily on neurosciences and applications of complexity theory from a behavioral perspective. This seminar, by Dr. Qin Tian has focused on the question of how seeing public policy issues as being framed in the world (human-environment interactions) as a complex adaptive system. ...which is part of what makes good public policy so very difficult to acheive.
 
 ---
 
-## Overview
+### Overview
 
-1. Research interest
-2. Theory motivating this interest
+
+1. Intents and purposes
+2. Theory and Motivation
 3. Model design
-  1. System
-  2. Key Parameters
+  - Representation of the system
+      - Agents 
+      - Environment
+      - Feedback mechanism/s
+      - Endogenous and exogenous entities
+  - Key model parameters
 4. Discussion
 
----
-
-<section>
-
-## Research Questions
-
-blah, blah, blah
-
----
-
-## Questions in Context
-
- - Futurist and strategist in OSD
- - Arms control and weapons proliferation
- - This slide has the hmtl end section and dash amp verticle
- 
-> Assumptions about the future differ wildly 
-
-</section>
+*** =pnotes
+What are you trying to do? Articulate your objectives using absolutely no jargon.
+How is it done today, and what are the limits of current practice?
+What's new in your approach and why do you think it will be successful?
+Who cares?
+If you're successful, what difference will it make?
+What are the risks and the payoffs?
+How much will it cost?
+How long will it take?
+What are the midterm and final "exams" to check for success?
 
 --- &vertical
 
-## Title of first slide with a down arrow
+### Mandate
 
-This should be the first slide with a down button
-
-blah, blah
-
-*** 
-
-## Verticle slide under R.I.
-
-I have a few backup slides under the Research Questions slide
+> We need models of science able to incorporate the chaotic complexity of the international system, not a view of science that takes science itself as the primary good and then attempts to force the international system into it <small>(Colin Wight 2006, p295)</small>
 
 ***
 
-## Basement Level 1
+### Intents
 
-Press down to navigate.
+* I am interested in the future of the international political system
+ - as a system in and of itself
+ - as the context for more localized phenomena
+
+* I want to build a model of the international politial system with which to experiment about possible futures
+ - also serve as a meta-model for smaller-scale and discipline-specific research (extensible)
+ - to serve as a laboratory in which to compare other models
+
+### Purposes
+
+* I expect this tool will be useful for policy-makers and planners to define common context for plans that span bureaucratic boundaries
 
 ***
 
-## Basement Level 2
+### Research Question (1 of 3)
 
-Press up to navigate back up 
 
-But, pressing over works just as well to move to the next slide (over)
+* Is it possible to build a model of the world political system?
+  - assuming it is a complex adaptive system
+  - noting that the structure of the system is not (has not been) static 
+  - allowing that the preeminent component (nation-state) is itself a CAS
+  - providing for alternative components to compete as organizing mechanisms (not a model of national liberalism)
 
+***
+
+### Research Question (2 of 3)
+
+* Could such a model also be used as a context (meta-model) in which to compare other models that postulate a world political system (trade, war,  national policies, ...)?
+ - help with validation of those models (compare/contrast)
+ - encourage docking of related models/scenarios (coal & steel production vs war-mongering, US defaults on debt, ...)
+ 
 *** 
+ 
+### Research Question (3 of 3)
 
-## Basement Level 3
+* What are the hallmarks of structural & systemic change? 
+ - WW I and the dissolution of empires
+ - End of the Cold War
+ - Whatever comes next (post-nationalism, transnationalism, ...)
+ 
+* ...and, do we see some of this already with asymetric challenges to nations and their roles?
+ - al Qaida and Islamic jihad, anti-corporate movement (Occupy, etc)
+ - Brad/Chelsea Manning, Ed Snowden, Wiki Leaks, ...
+ - BitCoin, private militaries
+ - FoxConn, global mega-corp with welfare and governance
 
-I think it works just as well to go over, even when more slides are below
+***
+
+### Questions in Context
+
+Much of this interest is motivated by work experience with the government, whitnessing a lack of coordination between agencies in the same efforts
+
+</br>
+ - Futurist and strategist in OSD
+ - Arms control and weapons proliferation 
+
+</br>
+
+> Assumptions about the future differ wildly 
 
 --- &verticle
 
+---
+
+### Model Overview
+
+* A ground-up model from individual to the international system
+
+* Transformed (created?) through actions/interactions of agents and __NOT__ what links agents to postioins/roles 
+
+* Will require a novel computational approach
+  - Scale is a problem (maybe 1:10 scale, also problematic)
+  - Agentum (Python version of Mason)
+  - Massively parallel (pi-cloud, AWS, parallela)
+  - Varying _resolution_ of agents and holongraphic agents
+
+* Emeregent holons (countries, corporations) 
 
 ---
 
-# Theory
+### Representation of the system
 
----
+</br>
 
-# Model Overview
-
-## Representation of the system
-1. Agents (attributes, decisions/actions, interactions)
-2. The environment
-3. Feedback
+1. Agents  
+  - attributes 
+  - decisions and actions
+  - interactions
+2. Environment
+3. Feedback mechanism/s
 4. Endogenous and exogenous entities
 
-## Key Parameters
+</br>
 
----
+#### Key Model Parameters
 
-# Agents
+(?)
 
----
+--- &vertical
 
-# Environment
+### Agents
+* Simple agents, living in a large network graph
+  - ZI, few attributes, generic interactions within each _social plane_ 
 
----
+* Some agents are more developed (backstory extension)
+  - Determined by their position in the social network
+  - Highly-connected agents have memory and reason
+  - Interactions have more meaning, deeper data
 
-# Agent-Structure Interactions
+* Some agents are emergent holons (countries, corporations, etc)
+  - Rob Axtel's _Firms_ model
+  - Claudio Cioffi-Revilla's _Cannonical_ model
+  - Colin Wight's _Politics as Ontology_
 
----
+***
 
-# Endogenous/Exogenous Aspects
+### Environment
 
----
+* To some extent, this is model _of_ the environment
 
-# Backup Information
+* Bhaskar's _four planes of social activity_ <small>(Wight 2006)</small>
+ - Material transactions with nature: _real_ GIS space
+ - Inter-/Intra-subjective actions: rules, norms, beliefs, ...
+ - Social relations: role, class, production, ... (we)
+ - Agents' subjectivity: self identity (id)
+ 
+***
 
-## Model verification and validation
-..* How I would validate such a model
+### Agent-Structure Interactions
 
-## Experiment design and expected results
-..* Some experiments to address the primary questions 
-..* What to measure?
+* Some agents are constructed: Wight's _structurata_
+  - Constructor agents as _actors_ for structurata
+  - until replaced by usurping agent or board (votes)
+  
+* Developed agents use _practical reason_ to interact
+  - $if I want x, then I need y$
+  - $I can get y$
+  - $I will try to get x$
+  
+* Least developed agents exist to generate _structural emergence_   
+  
+
+***
+
+### Endogenous/Exogenous Aspects
+
+* All agents are constrained by the _planes of social activity_
+  - It would be really cool to link to real data
+    - Harvard-MIT Dataverse (sociographic)
+    - GDELT (source of reasoning data)
+    - War and governance data (COW, HRW, ...)
+    
+* Bootstraping problem (creating the world we currently live in)
+
+* Experimentation as exogenous feature
+
+--- &vertical
+
+# Backup 
+
+***
+
+### Model verification and validation
+
+* How I would validate such a model?
+
+***
+
+### Experiment design and expected results
+
+* Some experiments to address the primary questions 
+* What to measure?
+
+***
 
 ## What results did/would you expect? Why?
 
+
 ---
 
-## Discussion
+# Discussion
 

@@ -8,8 +8,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <link rel="stylesheet" href="libraries/frameworks/revealjs/css/reveal.min.css">
-  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/theme/night.css" id="theme">
-  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" id="theme">
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/theme/moon.css" id="theme">
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/zenburn.css" id="theme">
   <!--[if lt IE 9]>
   <script src="lib/js/html5shiv.js"></script>
   <![endif]-->  <link rel="stylesheet" href = "assets/css/ribbons.css">
@@ -18,163 +18,370 @@
 <body>
   <div class="reveal">
     <div class="slides">
-      <section class='' data-state='' id='slide-1'>
+      <section class='class1' data-state='' id='slide-1'>
   <h3>Modeling a Dynamic Global Context</h3>
-  <h4>(A global-scale, extensible, docking model of the world as a complex adaptive system for postulating world futures)</h4>
+  <p></br>   </p>
 
-<p><small> CW Dillon
-for CAS in Public Policy, CSS739
-George Mason University
+<hr>
+
+<p>A global-scale, extensible, docking  model<br>
+of<br>
+the world political system<br>
+&mdash;as a complex adaptive system&mdash;<br>
+to<br>
+postulate, contextualize and compare<br>
+alternative world futures</p>
+
+<hr>
+
+<p></br>
+</br></p>
+
+<p><small> 
+<a href="http://www.css.gmu.edu/?q=node/15">CW Dillon</a> </p>
+
+<p>for <em>CAS in Public Policy</em>, CSS739</p>
+
+<p>George Mason University
 </small></p>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
   <aside class='notes'>
-    <p>I am a PhD student in the Department of Computational Social Sciences, at the Krasnow Institute for Advanced Studies. We focus primarily on neurosciences and applications of complexity theory. This seminar, by Dr. Qin Tian has focused on the question of how seeing policy issues as being framed by the world (human-environment interactions) as a complex adaptive system. ...which is part of what makes good public policy so very difficult to acheive.</p>
+    <p>I am a PhD student in the Department of Computational Social Sciences, at the Krasnow Institute for Advanced Studies. We focus primarily on neurosciences and applications of complexity theory from a behavioral perspective. This seminar, by Dr. Qin Tian has focused on the question of how seeing public policy issues as being framed in the world (human-environment interactions) as a complex adaptive system. ...which is part of what makes good public policy so very difficult to acheive.</p>
 
   </aside>
 </section>
 <section class='' data-state='' id='slide-2'>
-  <h2>Overview</h2>
+  <h3>Overview</h3>
   <ol>
-<li>Research interest</li>
-<li>Theory motivating this interest</li>
+<li>Intents and purposes</li>
+<li>Theory and Motivation</li>
 <li>Model design
 
-<ol>
-<li>System</li>
-<li>Key Parameters</li>
-</ol></li>
+<ul>
+<li>Representation of the system
+
+<ul>
+<li>Agents </li>
+<li>Environment</li>
+<li>Feedback mechanism/s</li>
+<li>Endogenous and exogenous entities</li>
+</ul></li>
+<li>Key model parameters</li>
+</ul></li>
 <li>Discussion</li>
 </ol>
 
+  <aside class='notes'>
+    <p>What are you trying to do? Articulate your objectives using absolutely no jargon.
+How is it done today, and what are the limits of current practice?
+What&#39;s new in your approach and why do you think it will be successful?
+Who cares?
+If you&#39;re successful, what difference will it make?
+What are the risks and the payoffs?
+How much will it cost?
+How long will it take?
+What are the midterm and final &quot;exams&quot; to check for success?</p>
+
+  </aside>
 </section>
-<section class='' data-state='' id='slide-3'>
-  
-  <p><section></p>
+<section>
+   <section class='' data-state=''>
+    <h3>Mandate</h3>
+    <blockquote>
+<p>We need models of science able to incorporate the chaotic complexity of the international system, not a view of science that takes science itself as the primary good and then attempts to force the international system into it <small>(Colin Wight 2006, p295)</small></p>
+</blockquote>
 
-<h2>Research Questions</h2>
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h3>Intents</h3>
 
-<p>blah, blah, blah</p>
+<ul>
+<li><p>I am interested in the future of the international political system</p>
 
-</section>
-<section class='' data-state='' id='slide-4'>
-  <h2>Questions in Context</h2>
-  <ul>
-<li>Futurist and strategist in OSD</li>
-<li>Arms control and weapons proliferation</li>
-<li>This slide has the hmtl end section and dash amp verticle</li>
+<ul>
+<li>as a system in and of itself</li>
+<li>as the context for more localized phenomena</li>
+</ul></li>
+<li><p>I want to build a model of the international politial system with which to experiment about possible futures</p>
+
+<ul>
+<li>also serve as a meta-model for smaller-scale and discipline-specific research (extensible)</li>
+<li>to serve as a laboratory in which to compare other models</li>
+</ul></li>
 </ul>
+
+<h3>Purposes</h3>
+
+<ul>
+<li>I expect this tool will be useful for policy-makers and planners to define common context for plans that span bureaucratic boundaries</li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h3>Research Question (1 of 3)</h3>
+
+<ul>
+<li>Is it possible to build a model of the world political system?
+
+<ul>
+<li>assuming it is a complex adaptive system</li>
+<li>noting that the structure of the system is not (has not been) static </li>
+<li>allowing that the preeminent component (nation-state) is itself a CAS</li>
+<li>providing for alternative components to compete as organizing mechanisms (not a model of national liberalism)</li>
+</ul></li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h3>Research Question (2 of 3)</h3>
+
+<ul>
+<li>Could such a model also be used as a context (meta-model) in which to compare other models that postulate a world political system (trade, war,  national policies, ...)?
+
+<ul>
+<li>help with validation of those models (compare/contrast)</li>
+<li>encourage docking of related models/scenarios (coal &amp; steel production vs war-mongering, US defaults on debt, ...)</li>
+</ul></li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h3>Research Question (3 of 3)</h3>
+
+<ul>
+<li><p>What are the hallmarks of structural &amp; systemic change? </p>
+
+<ul>
+<li>WW I and the dissolution of empires</li>
+<li>End of the Cold War</li>
+<li>Whatever comes next (post-nationalism, transnationalism, ...)</li>
+</ul></li>
+<li><p class='..and,'>do we see some of this already with asymetric challenges to nations and their roles?</p>
+
+<ul>
+<li>al Qaida and Islamic jihad, anti-corporate movement (Occupy, etc)</li>
+<li>Brad/Chelsea Manning, Ed Snowden, Wiki Leaks, ...</li>
+<li>BitCoin, private militaries</li>
+<li>FoxConn, global mega-corp with welfare and governance</li>
+</ul></li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h3>Questions in Context</h3>
+
+<p>Much of this interest is motivated by work experience with the government, whitnessing a lack of coordination between agencies in the same efforts</p>
+
+<p></br></p>
+
+<ul>
+<li>Futurist and strategist in OSD</li>
+<li>Arms control and weapons proliferation </li>
+</ul>
+
+<p></br></p>
 
 <blockquote>
 <p>Assumptions about the future differ wildly </p>
 </blockquote>
 
-<p></section></p>
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+</section>
+
+
+<section class='' data-state='' id='slide-5'>
+  <h3>Model Overview</h3>
+  <ul>
+<li><p>A ground-up model from individual to the international system</p></li>
+<li><p>Transformed (created?) through actions/interactions of agents and <strong>NOT</strong> what links agents to postioins/roles </p></li>
+<li><p>Will require a novel computational approach</p>
+
+<ul>
+<li>Scale is a problem (maybe 1:10 scale, also problematic)</li>
+<li>Agentum (Python version of Mason)</li>
+<li>Massively parallel (pi-cloud, AWS, parallela)</li>
+<li>Varying <em>resolution</em> of agents and holongraphic agents</li>
+</ul></li>
+<li><p>Emeregent holons (countries, corporations) </p></li>
+</ul>
+
+</section>
+<section class='' data-state='' id='slide-6'>
+  <h3>Representation of the system</h3>
+  <p></br></p>
+
+<ol>
+<li>Agents<br>
+
+<ul>
+<li>attributes </li>
+<li>decisions and actions</li>
+<li>interactions</li>
+</ul></li>
+<li>Environment</li>
+<li>Feedback mechanism/s</li>
+<li>Endogenous and exogenous entities</li>
+</ol>
+
+<p></br></p>
+
+<h4>Key Model Parameters</h4>
+
+<p>(?)</p>
 
 </section>
 <section>
    <section class='' data-state=''>
-    <h2>Title of first slide with a down arrow</h2>
-    <p>This should be the first slide with a down button</p>
+    <h3>Agents</h3>
+    <ul>
+<li><p>Simple agents, living in a large network graph</p>
 
-<p>blah, blah</p>
+<ul>
+<li>ZI, few attributes, generic interactions within each <em>social plane</em> </li>
+</ul></li>
+<li><p>Some agents are more developed (backstory extension)</p>
 
-    <aside class='notes'>
-      
-    </aside>
-   </section>
-   <section class='' data-state=''>
-    <h2>Verticle slide under R.I.</h2>
+<ul>
+<li>Determined by their position in the social network</li>
+<li>Highly-connected agents have memory and reason</li>
+<li>Interactions have more meaning, deeper data</li>
+</ul></li>
+<li><p>Some agents are emergent holons (countries, corporations, etc)</p>
 
-<p>I have a few backup slides under the Research Questions slide</p>
-
-    <aside class='notes'>
-      
-    </aside>
-   </section>
-   <section class='' data-state=''>
-    <h2>Basement Level 1</h2>
-
-<p>Press down to navigate.</p>
-
-    <aside class='notes'>
-      
-    </aside>
-   </section>
-   <section class='' data-state=''>
-    <h2>Basement Level 2</h2>
-
-<p>Press up to navigate back up </p>
-
-<p>But, pressing over works just as well to move to the next slide (over)</p>
+<ul>
+<li>Rob Axtel&#39;s <em>Firms</em> model</li>
+<li>Claudio Cioffi-Revilla&#39;s <em>Cannonical</em> model</li>
+<li>Colin Wight&#39;s <em>Politics as Ontology</em></li>
+</ul></li>
+</ul>
 
     <aside class='notes'>
       
     </aside>
    </section>
    <section class='' data-state=''>
-    <h2>Basement Level 3</h2>
+    <h3>Environment</h3>
 
-<p>I think it works just as well to go over, even when more slides are below</p>
+<ul>
+<li><p>To some extent, this is model <em>of</em> the environment</p></li>
+<li><p>Bhaskar&#39;s <em>four planes of social activity</em> <small>(Wight 2006)</small></p>
+
+<ul>
+<li>Material transactions with nature: <em>real</em> GIS space</li>
+<li>Inter-/Intra-subjective actions: rules, norms, beliefs, ...</li>
+<li>Social relations: role, class, production, ... (we)</li>
+<li>Agents&#39; subjectivity: self identity (id)</li>
+</ul></li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h3>Agent-Structure Interactions</h3>
+
+<ul>
+<li><p>Some agents are constructed: Wight&#39;s <em>structurata</em></p>
+
+<ul>
+<li>Constructor agents as <em>actors</em> for structurata</li>
+<li>until replaced by usurping agent or board (votes)</li>
+</ul></li>
+<li><p>Developed agents use <em>practical reason</em> to interact</p>
+
+<ul>
+<li>$if I want x, then I need y$</li>
+<li>$I can get y$</li>
+<li>$I will try to get x$</li>
+</ul></li>
+<li><p>Least developed agents exist to generate <em>structural emergence</em>   </p></li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h3>Endogenous/Exogenous Aspects</h3>
+
+<ul>
+<li><p>All agents are constrained by the <em>planes of social activity</em></p>
+
+<ul>
+<li>It would be really cool to link to real data</li>
+<li>Harvard-MIT Dataverse (sociographic)</li>
+<li>GDELT (source of reasoning data)</li>
+<li>War and governance data (COW, HRW, ...)</li>
+</ul></li>
+<li><p>Bootstraping problem (creating the world we currently live in)</p></li>
+<li><p>Experimentation as exogenous feature</p></li>
+</ul>
 
     <aside class='notes'>
       
     </aside>
    </section>
 </section>
+<section>
+   <section class='' data-state=''>
+    <h1>Backup</h1>
+    
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h3>Model verification and validation</h3>
 
+<ul>
+<li>How I would validate such a model?</li>
+</ul>
 
-<section class='' data-state='' id='slide-7'>
-  <h1>Theory</h1>
-  
-</section>
-<section class='' data-state='' id='slide-8'>
-  <h1>Model Overview</h1>
-  <h2>Representation of the system</h2>
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h3>Experiment design and expected results</h3>
 
-<ol>
-<li>Agents (attributes, decisions/actions, interactions)</li>
-<li>The environment</li>
-<li>Feedback</li>
-<li>Endogenous and exogenous entities</li>
-</ol>
+<ul>
+<li>Some experiments to address the primary questions </li>
+<li>What to measure?</li>
+</ul>
 
-<h2>Key Parameters</h2>
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>What results did/would you expect? Why?</h2>
 
+    <aside class='notes'>
+      
+    </aside>
+   </section>
 </section>
 <section class='' data-state='' id='slide-9'>
-  <h1>Agents</h1>
-  
-</section>
-<section class='' data-state='' id='slide-10'>
-  <h1>Environment</h1>
-  
-</section>
-<section class='' data-state='' id='slide-11'>
-  <h1>Agent-Structure Interactions</h1>
-  
-</section>
-<section class='' data-state='' id='slide-12'>
-  <h1>Endogenous/Exogenous Aspects</h1>
-  
-</section>
-<section class='' data-state='' id='slide-13'>
-  <h1>Backup Information</h1>
-  <h2>Model verification and validation</h2>
-
-<p class='.*'>How I would validate such a model</p>
-
-<h2>Experiment design and expected results</h2>
-
-<p class='.*'>Some experiments to address the primary questions 
-..* What to measure?</p>
-
-<h2>What results did/would you expect? Why?</h2>
-
-</section>
-<section class='' data-state='' id='slide-14'>
-  <h2>Discussion</h2>
+  <h1>Discussion</h1>
   
 </section>
     </div>
@@ -190,7 +397,7 @@ George Mason University
     progress: true,
     history: true,
     center: true,
-    theme: Reveal.getQueryHash().theme || 'night', 
+    theme: Reveal.getQueryHash().theme || 'moon', 
     transition: Reveal.getQueryHash().transition || 'cube', 
     dependencies: [
     // Cross-browser shim that fully implements classList -
